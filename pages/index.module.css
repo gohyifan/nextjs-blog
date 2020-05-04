@@ -1,0 +1,18 @@
+.listInline > li {
+  font-size: 48px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.listInline {
+  list-style: none;
+}
+
+.listInline a {
+  color: #999;
+  text-decoration: none;
+}
+
+.listInline a:hover {
+  color: #686868;
+}
