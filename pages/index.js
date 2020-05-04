@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 // style imports
 import utilStyles from '../styles/utils.module.css'
+import indexStyles from './index.module.css'
 
 // component imports
 import Date from '../components/date'
@@ -18,11 +19,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Yi Fan, a software engineer skilled in React and Rails. You can contact me on Twitter.</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <p>A software engineer skilled in React and Rails; passionate about building tech products that have a great impact on people's lives.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
@@ -38,6 +35,26 @@ export default function Home({ allPostsData }) {
               </small>
             </li>
           ))}
+        </ul>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Connect</h2>
+        <ul className={indexStyles.listInline}>
+          <li>
+            <a href="https://github.com/gohyifan" target="_blank">
+              <i className="fab fa-github-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/imgyf" target="_blank">
+              <i className="fab fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gohyifan/" target="_blank">
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </li>
         </ul>
       </section>
     </Layout>
